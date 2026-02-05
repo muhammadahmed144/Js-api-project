@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="map.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src= "map.png" alt="img">
+            <h1>Location Finder</h1>
+        </div> 
+    </nav>
+    <div class="main-div">
+            <img src="https://thumbs.dreamstime.com/b/glowing-neon-location-pin-futuristic-map-navigation-gps-technology-digital-abstrac-vibrant-blue-sits-dark-shows-379524211.jpg" alt="img">
+            <div class="heading-description">
+                <h1>Easily discover your current location</h1>
+        <p>This application uses real-time location services to accurately detect where you are and display it on the map.</p>
+        <button id="getLocationBtn">get my location</button>
+            </div>
+    </div>      
+
+    <div class="flag-div">
+    </div>
+    <div class="map-div">
+        <div id="map"></div>
+    </div>
+<div class="country-section">
+    <div class="country-Details">
+    </div>
+    </div>
+    <div class="neighbors-section">
+  <button class="slide-btn left">◀</button>
+  
+  <div class="neighbors-slider" id="neighbors">
+    <!-- cards yahan inject honge -->
+  </div>
+
+  <button class="slide-btn right">▶</button>
+</div>
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</body>
+</html>
