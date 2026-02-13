@@ -10,7 +10,7 @@ const html = `<div id="receipeName">
                     <img src="https://images.food52.com/VOfOuvcQe7fBeSqixNe1L-LhUBY=/d815e816-4664-472e-990b-d880be41499f--chicken-biryani-recipe.jpg" alt="img">
                 </div>
                 <div>
-                    <h2>Tittle of Recipe</h2>
+                    <h5>Tittle of Recipe</h5>
                     <p>Description</p>
                 </div>
             </div>`
@@ -19,7 +19,7 @@ function myRecipesApiCall (foodName) {
     const forkifyLoading = fetch(`https://forkify-api.herokuapp.com/api/v2/recipes?search=${foodName}`)
 foodItmeArea.innerHTML = `  <div class="spinner">
     <div></div>
-  </div>
+</div>
 `
 
 forkifyLoading
@@ -38,7 +38,7 @@ forkifyLoading
                     alt="">
                 </div>
                 <div>
-                    <h2>${recipe.title}</h2>
+                    <h3>${recipe.title}</h3>
                     <p>${recipe.publisher}</p>
                 </div>
             </div>`
