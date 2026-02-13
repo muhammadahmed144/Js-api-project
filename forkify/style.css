@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    border-top: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    background:linear-gradient(to right, #F7C586, #F69A83);
+}
+
+nav{
+    background-color: #f9f5f2;          
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav img{
+    width: 150px;
+    height: 50px;
+}
+#searchArea{
+    border-radius: 50px;
+    border: none;
+    height: 40px;
+    width: 600px;
+    /* border: 2px solid black; */
+    position: relative;
+}
+
+#searchArea input{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+#searchArea button{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 140px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    background: linear-gradient(to left,#F69A83, #F7C586);
+    color: aliceblue;
+}
+
+#mainArea{
+    display: flex;
+    height: 150vh;
+}
+    
+#foodItemArea{
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px 10px;
+    overflow: scroll;
+}
+#recipeDetail{
+    width: 70%;
+    height: 100%;
+    background-color: #f9f5f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#receipeName{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+#receipeImg{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#receipeImg img{
+    width: 100%;
+    height: 100%;
+}
+.imgDetails{
+    height: 400px;
+    width: 100%;
+}
+
+.imgDetails img{
+    width: 100%;
+    height: 100%;
+}
+
+.spinner {
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.spinner div {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #eee;
+  border-top: 5px solid #f38e82;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
