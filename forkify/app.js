@@ -37,7 +37,7 @@ forkifyLoading
                     <img src= ${recipe.image_url} 
                     alt="">
                 </div>
-                <div>
+                <div id = "receipeTitle">
                     <h3>${recipe.title}</h3>
                     <p>${recipe.publisher}</p>
                 </div>
